@@ -16,6 +16,9 @@
          <li>
          <router-link :to="{ name: 'SignUp'}"> User </router-link>
         </li>
+         <li>
+         <router-link :to="{ name: 'Home'}"> LogOut </router-link>
+        </li>
      
       </ul>
     </nav>

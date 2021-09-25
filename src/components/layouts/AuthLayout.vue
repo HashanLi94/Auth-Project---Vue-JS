@@ -15,10 +15,11 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import "../../assets/scss/master.scss";
 .main {
   width: 100%;
   min-height: 100vh;
-  background: url('https://thumbs.dreamstime.com/z/back-to-school-doodle-seamless-pattern-drawing-background-lineart-design-vector-illustration-152202793.jpg');
+  background: url("https://thumbs.dreamstime.com/z/back-to-school-doodle-seamless-pattern-drawing-background-lineart-design-vector-illustration-152202793.jpg");
   box-sizing: border-box;
   position: relative;
   z-index: 1;

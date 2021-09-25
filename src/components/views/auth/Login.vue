@@ -97,7 +97,7 @@
             </h5>
           </div>
 
-          <div class="p-text-center p-mt-4">
+          <div class="p-text-center p-mt-3">
             <h5>Lorem ipsum dolor sit amet.</h5>
             <h4>
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab, rem.
@@ -160,7 +160,7 @@ export default {
 <style lang="scss" scoped>
 .form-demo {
   .card {
-    margin-top: 4rem;
+    margin: 4rem 1rem 0 1rem;
     background-color: #fff;
     padding: 20px;
     border-radius: 10px;
