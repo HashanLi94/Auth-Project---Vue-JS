@@ -7,14 +7,13 @@ import store from './store'
 import CommonLayout from './components/layouts/CommonLayout.vue';
 import AuthLayout from './components/layouts/AuthLayout.vue';
 
-
-
 // primevue
 import PrimeVue from 'primevue/config';
 import 'primeflex/primeflex.css';
-import 'primevue/resources/themes/saga-blue/theme.css'      //theme
+import 'primevue/resources/themes/md-light-indigo/theme.css'      //theme
 import 'primevue/resources/primevue.min.css'                 //core css
 import 'primeicons/primeicons.css'                           //icons
+import Ripple from 'primevue/ripple';
 
 // import primevue components
 import Dialog from 'primevue/dialog';
@@ -43,6 +42,8 @@ app.use(PrimeVue, {
         tooltip: 1100       //tooltip
     }
 });
+app.use(PrimeVue, {ripple: true});
+app.directive('ripple', Ripple);
 app.component('Dialog', Dialog);
 app.component('InputText', InputText);
 app.component('Password', Password);

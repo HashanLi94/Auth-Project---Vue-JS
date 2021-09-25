@@ -4,7 +4,7 @@
       <div class="p-d-flex p-jc-center">
         <div class="card p-shadow-14">
           <h2 class="p-text-center">Login</h2>
- 
+
           <form @submit.prevent="handleSubmit(!v$.$invalid)" class="p-fluid">
             <div class="p-field">
               <div class="p-float-label p-input-icon-right">
@@ -82,7 +82,12 @@
               >
             </div>
 
-            <Button type="submit" label="Submit" class="p-mt-2" />
+            <Button
+              type="submit"
+              label="Submit"
+              class="p-mt-2 p-ripple purple"
+              v-ripple
+            />
           </form>
 
           <div class="p-text-center p-mt-4">
@@ -130,9 +135,9 @@ export default {
       },
     };
   },
-//   created() {
-//     this.$emit("update:layout", AuthLayout);
-//   },
+  //   created() {
+  //     this.$emit("update:layout", AuthLayout);
+  //   },
   mounted() {},
   methods: {
     handleSubmit(isFormValid) {
@@ -153,14 +158,9 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.m--login {
-  height: auto;
-}
-
 .form-demo {
   .card {
     margin-top: 4rem;
-    min-width: 550px;
     background-color: #fff;
     padding: 20px;
     border-radius: 10px;
@@ -171,12 +171,6 @@ export default {
 
     .p-field {
       margin-bottom: 2rem;
-    }
-  }
-
-  @media screen and (max-width: 960px) {
-    .card {
-      width: 80%;
     }
   }
 }
